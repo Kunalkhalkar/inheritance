@@ -22,5 +22,52 @@ Filtering and counting items
 */
 import java.util.*;
 public class MakeMyPayment{
+	public static void main(String x[]){
+		Scanner sc = new Scanner(System.in);
+		Payment []p = new Payment[5];
+		for(int i =0; i<p.length; i++){
+			System.out.println("Enter the choice\n1.UPI \n2.debit Card\n3.credit Card");
+			int ch = sc.nextInt();
+			switch(ch){
+				case 1:
+					System.out.println("Enter the amount");
+			}
+		}
+	}
+	
+}
 
+interface Payment{
+	double processPayment(double amount);
+	double getCharges();
+}
+
+class UPI implements Payment{
+	double charge;
+	public double processPayment(double amount){
+		charge = amount * 0.1;
+		return amount + charge;
+	}
+	
+	public double getCharges(){
+		return charge;
+	}
+}
+class CreditCard implements Payment{
+	public double processPayment(double amount){
+		return amount * 1.02;
+	}
+	
+	public double getCharges(){
+		return 0.2;
+	}
+}
+class DebitCard implements{
+	public double processPayment(double amount){
+		return amount * 1.01;
+	}
+	
+	public double getCharges(){
+		return 0.1;
+	}
 }
