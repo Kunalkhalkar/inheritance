@@ -34,13 +34,15 @@ public class Conversion{
 				case 1:
 					System.out.println("Enter the tempreture in celcius");
 					temp = sc.nextInt();
-					c[i] = new CelsiusToFahrenheit();
+					c[i] = new CelsiusToFahrenheit(temp);
+					
 					
 			}
 		}
 	}
 }
 interface Converter{
+	
 	double convert(double value);
 }
 //F = C × 9/5 + 32
