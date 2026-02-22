@@ -31,6 +31,8 @@ public class MakeMyPayment{
 			switch(ch){
 				case 1:
 					System.out.println("Enter the amount");
+					p[i] = new UPT();
+					p[i].processPayment(amount);
 			}
 		}
 	}

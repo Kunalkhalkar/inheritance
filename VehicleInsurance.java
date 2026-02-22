@@ -58,6 +58,7 @@ public class VehicleInsurance{
 		
 		Vehicle v = new Vehicle();
 		v.setVehicle(c);
+		
 	}
 	
 }

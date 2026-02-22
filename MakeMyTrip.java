@@ -165,4 +165,5 @@ class Flight extends Transport{
 		}
 		return fare;
 	}
+	
 }

@@ -17,6 +17,7 @@ public class ArrayToArrayList{
 		
 		ArrayList<Integer> al = new ArrayList<>();
 		for(int i =0; i<a.length; i++){
+			 
 			al.add(a[i]);
 		}
 		for(int ob:a){
